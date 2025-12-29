@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import { SparklesCore } from "./Sparkles";
- 
+
 export function SparklesPreview() {
   return (
     <div className="h-screen w-full bg-black-100 flex flex-row items-center justify-center overflow-hidden rounded-md absolute top-0 left-0">
-      <div className="w-full absolute inset-0 h-screen">
+      <div className="w-full h-screen">
         <SparklesCore
           id="tsparticlesfullpage"
           background="transparent"
@@ -16,12 +16,6 @@ export function SparklesPreview() {
           particleColor="#FFFFFF"
         />
       </div>
-
-      
-
-
-
     </div>
-    
   );
 }
