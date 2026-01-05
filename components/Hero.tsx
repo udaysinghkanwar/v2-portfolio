@@ -4,10 +4,11 @@ import { SparklesPreview } from "./ui/SparklesPreview";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import { FaFilePdf } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-56 min-h-[60vh] ">
+    <div id="about" className="pb-20 pt-56 min-h-[60vh] ">
       <div aria-label="Spotlight">
         <Spotlight
           className="-top-40 -left-20 md:-left-5 md:-top-100 h-screen "
@@ -31,13 +32,33 @@ const Hero = () => {
             Hi, I am Uday, a software engineer based in Toronto, who is always
             exploring and open to new challenges.
           </p>
-          <a href="#about" className="w-full md:w-auto flex justify-center">
-            <MagicButton
-              title="Show My Work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="w-full flex flex-col md:flex-row items-center justify-center gap-4">
+            <a
+              href="https://linktr.ee/udaykanwar"
+              target="_blank"
+              rel="noreferrer"
+              className="w-full md:w-auto flex justify-center"
+            >
+              <MagicButton
+                title="Connect"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="w-full md:w-auto flex justify-center"
+            >
+              <MagicButton
+                title="View Resume"
+                icon={<FaFilePdf />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
