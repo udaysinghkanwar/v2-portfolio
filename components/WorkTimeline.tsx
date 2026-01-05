@@ -1,5 +1,5 @@
 import React from "react";
-import { Timeline } from "./ui/Timeline.tsx";
+import { Timeline } from "./ui/Timeline";
 import { workTimeline } from "@/data";
 
 export default function WorkTimeline() {
